@@ -350,7 +350,10 @@ const App = () => {
                 {isCustomizeOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
               </button>
 
-              {isCustomizeOpen && (
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${isCustomizeOpen ? 'max-h-150 opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+              >
                 <div className="space-y-4">
                   <div>
                     <label className="block text-gray-300 mb-2">Add Logo (Optional)</label>
@@ -401,10 +404,10 @@ const App = () => {
                     />
                   </div>
                 </div>
-              )}
+              </div>
 
               {/* Generate Button */}
-              <div className='flex items-center justify-between gap-2 mt-6'>
+              <div className='flex items-center justify-between gap-2 mt-4'>
                 <button
                   onClick={generateQRCode}
                   className="flex-1 p-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg cursor-pointer transition"
