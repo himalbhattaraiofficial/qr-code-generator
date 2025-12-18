@@ -211,7 +211,7 @@ const App = () => {
                     <select
                       value={formData.security}
                       onChange={(e) => setFormData({ ...formData, security: e.target.value })}
-                      className=" w-full px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 focus:border-blue-500 focus:outline-none"
+                      className="selectStyle w-full px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 focus:border-blue-500 focus:outline-none"
                     >
                       <option value="WPA">WPA/WPA2</option>
                       <option value="WEP">WEP</option>
