@@ -149,7 +149,9 @@ const App = () => {
   return (
     <div className="min-h-screen p-6" style={{ backgroundColor: '#0C0910' }}>
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-white mb-8 text-center">QR Code Generator</h1>
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 lg:mb-8 text-center leading-tight">
+          QR<span className="text-blue-500">Zen</span> – Free QR Code Generator
+        </h1>
 
         <div className="grid md:grid-cols-2 gap-6">
           {/* Left Panel - Input Section */}
@@ -181,7 +183,7 @@ const App = () => {
                   <label className="block text-gray-300 mb-2">URL</label>
                   <input
                     type="url"
-                    placeholder="https://example.com"
+                    placeholder="https://qrzen.vercel.app"
                     value={formData.url}
                     onChange={(e) => setFormData({ ...formData, url: e.target.value })}
                     className="w-full px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 focus:border-blue-500 focus:outline-none"
@@ -253,6 +255,7 @@ const App = () => {
                     <input
                       type="tel"
                       placeholder="+1234567890"
+                      maxLength={15}
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 focus:border-blue-500 focus:outline-none"
