@@ -448,7 +448,7 @@ const App = () => {
                 </div>
               ) : (
                 <div className="flex flex-col items-center">
-                  <div className="w-52 h-52 sm:w-64 sm:h-64 bg-gray-700 rounded-lg flex items-center justify-center mb-4">
+                  <div className="w-50 h-50 sm:w-64 sm:h-64 bg-gray-700 rounded-lg flex items-center justify-center mb-4">
 
                     <div className="text-gray-500">
                       <svg className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
