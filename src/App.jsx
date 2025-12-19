@@ -136,9 +136,14 @@ const App = () => {
       smsNumber: '',
       smsMessage: ''
     });
+    setQrColor('#000000');
+    setBgColor('#ffffff');
+    setQrSize(200);
     setLogo(null);
-    setQrSize(200)
     setGeneratedQR('');
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+    }
   };
 
   return (
@@ -458,8 +463,8 @@ const App = () => {
                     </div>
                   </div>
                   <p className="text-gray-400 text-center text-sm sm:text-base">
-  Fill in the details and click "Generate QR Code"
-</p>
+                    Fill in the details and click "Generate QR Code"
+                  </p>
                 </div>
               )}
             </div>
