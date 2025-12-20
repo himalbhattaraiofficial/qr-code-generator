@@ -1,7 +1,10 @@
-# QR Code Generator Project
+# QR Code Generator
 The QR Code Generator project is a React-based application designed to generate and customize QR codes for various purposes, such as URLs, WiFi networks, contact information, and more. This project aims to provide a user-friendly interface for creating and customizing QR codes, making it easier for users to share information and connect with others. The core features of this project include a simple and intuitive interface, support for multiple QR code categories, and customization options for QR code appearance.
 
-- **[Live Demo](https://qrzen.vercel.app/)**
+- **🔗 [Live Demo](https://qrzen.vercel.app/)**
+
+## Screenshots 📸
+![App Preview](./screenshot.png)
 
 ## 🚀 Features
 - **QR Code Generation**: Generate QR codes for various categories, including URLs, WiFi networks, contact information, and more.
@@ -11,7 +14,7 @@ The QR Code Generator project is a React-based application designed to generate 
 - **React-Based**: Built using React, ensuring a fast and efficient application.
 
 ## 🛠️ Tech Stack
-- **Frontend**: React, React DOM, Lucide React
+- **Frontend**: React, React DOM, Lucide React, React Hot Toast
 - **Build Tools**: Vite, @vitejs/plugin-react, @tailwindcss/vite
 - **Dependencies**: react, react-dom, @tailwindcss/vite, lucide-react, vite
 - **DevDependencies**: eslint, @types/react, @vitejs/plugin-react

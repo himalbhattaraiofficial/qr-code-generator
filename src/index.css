@@ -86,7 +86,7 @@ input[type="color" i]::-moz-color-swatch {
   border-radius: 10px;
 }
 
-/* custom select dropdown */
+/* custom select dropdown arrow */
 .selectStyle {
   appearance: none;
   -webkit-appearance: none;

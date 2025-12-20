@@ -356,6 +356,7 @@ const App = () => {
                     <input
                       type="tel"
                       placeholder="+1234567890"
+                      maxLength={15}
                       value={formData.smsNumber}
                       onChange={(e) => setFormData({ ...formData, smsNumber: e.target.value })}
                       className="w-full px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-700 focus:border-blue-500 focus:outline-none"

@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://qrzen.vercel.app/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Common bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
