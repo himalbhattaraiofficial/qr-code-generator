@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Wifi, Mail, MessageSquare, Link, User, FileText, Download, Upload, ChevronDown, ChevronUp } from 'lucide-react';
+import toast, { Toaster } from 'react-hot-toast';
 
 const App = () => {
   const [category, setCategory] = useState('URL');
@@ -92,10 +93,13 @@ const App = () => {
           ctx.drawImage(img, x, y, logoSize, logoSize);
 
           setGeneratedQR(canvas.toDataURL());
+          
         };
         img.src = logo;
+        
       } else {
         setGeneratedQR(canvas.toDataURL());
+        toast.success('Successfully created!');
       }
     } catch (err) {
       console.error('Error generating QR code:', err);
@@ -148,6 +152,29 @@ const App = () => {
 
   return (
     <div className="min-h-screen p-6" style={{ backgroundColor: '#0C0910' }}>
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 3000,
+          style: {
+            background: '#1f2937',
+            color: '#fff',
+            border: '1px solid #374151',
+          },
+          success: {
+            iconTheme: {
+              primary: '#10b981',
+              secondary: '#fff',
+            },
+          },
+          error: {
+            iconTheme: {
+              primary: '#ef4444',
+              secondary: '#fff',
+            },
+          },
+        }}
+      />
       <div className="max-w-7xl mx-auto">
         <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6 lg:mb-8 text-center leading-tight">
           QR<span className="text-blue-500">Zen</span> – Free QR Code Generator
